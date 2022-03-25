@@ -1,6 +1,6 @@
 #!/usr/bin/env hscript
 
-// trace(Math.floor(42.42)); // Not working!
+trace(Math.floor(42.42));
 trace(Lambda.map([1, 2, 3], (i) -> i + 40));
 trace(DateTools.format(Date.now(), '%T'));
 

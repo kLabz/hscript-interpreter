@@ -4,7 +4,7 @@
 
 -cp src
 -main hscript.interp.Interpreter
--hl hscript.hl
+-cpp bin/cpp/
 
 -dce no
 -D no-inline

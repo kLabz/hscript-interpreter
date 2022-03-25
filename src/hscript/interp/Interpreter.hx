@@ -60,7 +60,7 @@ class Interpreter {
 				interp.variables.set("DateTools", DateTools);
 				interp.variables.set("EReg", EReg);
 				interp.variables.set("Lambda", Lambda);
-				interp.variables.set("Math", Math); // Not working
+				interp.variables.set("Math", Math);
 				interp.variables.set("StringBuf", StringBuf);
 				interp.variables.set("StringTools", StringTools);
 
