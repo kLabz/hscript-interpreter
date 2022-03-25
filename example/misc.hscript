@@ -1,0 +1,11 @@
+#!/usr/bin/env hscript
+
+// trace(Math.floor(42.42)); // Not working!
+trace(Lambda.map([1, 2, 3], (i) -> i + 40));
+trace(DateTools.format(Date.now(), '%T'));
+
+var str = "Hello 42";
+var reg = new EReg("([0-9]+)", ""); // Flags mandatory
+if (reg.match(str)) trace(reg.matched(1));
+
+Timer.delay(function() trace(Date.now(), '!'), 1000);

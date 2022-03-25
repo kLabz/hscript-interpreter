@@ -1,0 +1,6 @@
+#!/usr/bin/env hscript
+
+// Warning: rate limited, will get `Http Error #429` from time to time
+var result = Http.requestUrl("https://dummy.restapiexample.com/api/v1/employee/1");
+var jsonResult = Json.parse(result);
+trace(jsonResult.message);

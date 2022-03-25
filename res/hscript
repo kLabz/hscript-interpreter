@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+hl /path/to/hscript-interpreter/hscript.hl $@

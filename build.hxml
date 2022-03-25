@@ -1,0 +1,11 @@
+-lib hscript
+-lib hxargs
+-lib console.hx
+
+-cp src
+-main hscript.interp.Interpreter
+-hl hscript.hl
+
+-dce no
+-D no-inline
+-D hscriptPos
