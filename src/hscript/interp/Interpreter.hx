@@ -74,6 +74,7 @@ class Interpreter {
 				interp.variables.set("Bytes", haxe.io.Bytes);
 
 				interp.variables.set("Sys", Sys);
+				interp.variables.set("Std", Std);
 				interp.variables.set("Http", sys.Http);
 				interp.variables.set("FileSystem", sys.FileSystem);
 				interp.variables.set("File", sys.io.File);
