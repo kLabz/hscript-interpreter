@@ -65,6 +65,9 @@ class Interpreter {
 				interp.variables.set("StringBuf", StringBuf);
 				interp.variables.set("StringTools", StringTools);
 
+				interp.variables.set("StringMap", haxe.ds.StringMap);
+				interp.variables.set("IntMap", haxe.ds.IntMap);
+
 				interp.variables.set("Json", haxe.Json);
 				interp.variables.set("Timer", haxe.Timer);
 				interp.variables.set("Path", haxe.io.Path);
