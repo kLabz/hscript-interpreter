@@ -45,10 +45,11 @@ class Interpreter {
 	}
 
 	static function execute(path:String) {
-		var fullpath = Path.join([Sys.getCwd(), path]);
-		if (FileSystem.exists(fullpath)) {
+		var abspath = StringTools.startsWith(path, '/') ? path : Path.join([Sys.getCwd(), path]);
+
+		if (FileSystem.exists(abspath)) {
 			var interp = new Interp();
-			var contents = File.getContent(fullpath);
+			var contents = File.getContent(abspath);
 			// Escape shebang
 			if (contents.charAt(0) == "#") contents = "//" + contents;
 
